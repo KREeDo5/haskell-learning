@@ -14,7 +14,6 @@ fourthList = [['a','d'], ['b', 'c']]
 getElementFromFirstList :: [a] -> a
 getElementFromFirstList e = head(tail e)
 
-
 getElementFromSecondList :: [[a]] -> a
 getElementFromSecondList e = head(tail(head e))
 
@@ -26,7 +25,8 @@ getElementFromFourthList e = head(head(tail e))
 
 
 main = do
+  let fourthResult = getElementFromFourthList fourthList
   print ("2.1: " ++ [getElementFromFirstList firstList])
   print ("2.2: " ++ [getElementFromSecondList secondList])
   print ("2.3: " ++ [getElementFromThirdList thirdList])
-  print ("2.4: " ++ [getElementFromFourthList fourthList])
+  print ("2.4: " ++ [fourthResult])
