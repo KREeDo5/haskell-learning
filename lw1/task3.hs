@@ -3,7 +3,7 @@ naturalsInt = [1..40]
 
 
 getOddIntList :: [Integer] -> [Integer]
-getOddIntList  = filter odd
+getOddIntList = filter odd
 
 main = do
   let result1 = getOddIntList naturalsInt
